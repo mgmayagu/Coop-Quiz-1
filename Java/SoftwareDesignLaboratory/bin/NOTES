@@ -1,0 +1,179 @@
+2.11.19
+
+	break -> will break the loop
+	continue -> will skip the rest and go on the next iteration 
+
+CHAPTER 6:
+
+static methods-> one copy of that method in memory
+
+METHODS - 	to re-use code, easy to read, debug and rewrite
+			separation of duties - so many people can work with in the same program
+			
+			
+3.5.19
+
+Chapter 8:
+ 	8.2 Time Class Case Study
+ 		private - access from members inside the class
+ 		public - you can access from anywhere
+ 		
+ 		"this." -> self pointer to the class class within (only visible within the class)
+ 		
+ 		
+ 			<bool expression> ? ___ : ____ 
+ 		
+ 		INVOKE another constructor
+ 			this(_, _, _, ...)
+ 			
+ 		COPY constructor - takes a parameter with the same name as the class
+ 		its job it to define how we want the copy of the class
+ 		
+ 		shallow - array don't get count
+ 		
+ 		final variable - can't be changed (99% of "final" are static)
+ 		static - only one instance of that variable (save memory)
+ 		
+ 		Composition: 
+ 			A class can have reference to objects of objects of other classes as members
+ 			"has a relationship"
+ 			
+ 	8.10 Garbage Collection <- Slow AF
+ 		expensive process regarding time 
+ 		- reclaim the memory occupied by objects that are no longer used <- gets decided by the JVM 
+ 		System.gc() <- method to call the garbage collector 
+ 		
+3.11.19
+
+	Strings are immutable classes because they are build in char
+	OPERATES AS A PRIMITIVE DATA TYPE 
+	
+	9.1
+		Inheritance - a new class is created by acquiring an existing class' members and possibly embellishing 
+						them with new or modified capabilities
+					- use the word "extends" 		
+				
+		Direct Superclass - is the superclass from which the subclass explicitly inherits
+		Indirect Superclass -
+		
+		PROTECTED (#) access specifier -> you can access from within the child class and and child of child and so on
+		default - if no access specifier is specified
+		
+		SUPER keyword - access the constructor of the base class
+		THIS keyword - call constructor within the class
+	
+		OVERLOADING - same signature but parameters are different, happens within class
+		OVERRIDING - same exact signature but what each method does is different from parent class
+		
+		binding - associating to instance 
+	
+		COMPOSITION - has a relationship 
+		INHERITANCE - is a relationship 
+
+3.13.19
+	CHAPTER 10
+	
+		POLYMORPHISM - enables you to "program in the general" rather that "program in the specific" 
+					 - enables you to write programs that process objects that share the same superclass as if they 
+					 were all objects of the superclass
+					 	 
+				   ANIMAL
+					move
+			    .	  .    	.
+			BIRD 	FROG	FISH
+			
+		ABSTRACT CLASS 	- you never intend to create objects (instance of it) 
+					 	- DOES NOT HAVE A BODY: incomplete class that a child class needs to fill up
+			
+			
+		all methods are abstracts
+			
+		ABTRACT CLASS VS INTERFACES
+			concrete classes - no interfaces
+	
+					
+		public class C2 extends C! implements IC, I{ ...}
+		
+		inheritance use solid line  SHAPE <- - - rock
+		interface use dash line		SHAPE <----- rock
+			
+			can you create a instance of an interface? absolutely NO
+			
+		slide 126: changes in interfaces 
+		
+				
+3.25.10
+	CHAPTER 13  : JavaFx
+		- Layout: determines the size and positioning of nodes in the scene graph
+		titledPane 
+		BorderPane
+		Pane
+		-controls
+		radioButto
+		listView		
+		
+		NODe:
+			position should be defined relative to its parent node and the other nodes in the parent 
+			
+	
+4.1.19
+	ANDROID
+		developed by Open Handset Alliance, led by Google
+		- An operating system for mobile devices such as smart phones and tablet computers.
+		- Latest Veriosn Android 9 pie 
+		
+		* Application framework enabling reuse and replacement of components
+		* 5 major layer
+			Linux kernel -> supplies Security memory management, process management, network stack and Driver model
+							(acts as an abstraction layer between the hardware and the rest of the sofware)
+			Libraries -> runs in system background
+						 C/C++ languages
+						 4 types:
+						 		  * bionic Libc, system C lib
+						 		  *
+						 		  *
+						 		  *
+			Android Runtime -> the core of Android platform
+							   Dalvik Virtual Machine - Only supports a subset of standard Java Library
+							   	java .class/.jar --> .dex
+							   Every Android application runs in its own DVM
+			Application Framework -> simplify the reuse of components
+			Applications -> a set of core applications shipped with Android platform
+							all written in java
+		
+		* Android Apps:
+						- Activity -> a single screen that's visible to the user
+						- Service  -> long running background 'part' of app
+						- ContentProvider ->
+						- Broadcast ->		
+						* Manifest File -> Every Android app must include an AndroidManifest.xml file:
+										 - Describes functionality - App's activity, services, etc- permission request...
+						
+						 		
+						 			
+			
+				
+					 
+					 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+	
